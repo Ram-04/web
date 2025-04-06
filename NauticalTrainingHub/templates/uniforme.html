@@ -1,0 +1,379 @@
+{% extends "layout.html" %}
+
+{% block title %}Uniforme - Universidad Marítima del Caribe{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/avatar.css') }}">
+{% endblock %}
+
+{% block content %}
+<!-- Uniform Hero Section -->
+<section class="hero">
+    <div class="container hero-content text-center">
+        <h1 class="hero-title">Reglamento de Uniformes</h1>
+        <p class="hero-subtitle">Conoce los diferentes uniformes utilizados por los cadetes de Ingeniería Marina y sus normas de uso.</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="page-content">
+                    <h2 class="mb-4">Importancia del Uniforme en la Formación Marítima</h2>
+                    
+                    <p class="lead mb-4">El uniforme no es solo una vestimenta, sino un símbolo de la disciplina, tradición y profesionalismo que caracteriza a la profesión marítima. Su uso adecuado refleja los valores fundamentales de la Universidad Marítima del Caribe.</p>
+                    
+                    <div class="card mb-5 shadow">
+                        <div class="card-header bg-secondary text-white">
+                            <h3 class="card-title m-0">Principios del Uso del Uniforme</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 mb-3 mb-md-0">
+                                    <div class="text-center">
+                                        <i class="fas fa-medal fa-3x text-primary mb-3"></i>
+                                        <h4>Identidad</h4>
+                                        <p>Representa a la institución y la profesión marítima ante la sociedad.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3 mb-md-0">
+                                    <div class="text-center">
+                                        <i class="fas fa-star fa-3x text-primary mb-3"></i>
+                                        <h4>Disciplina</h4>
+                                        <p>Fomenta el orden, respeto y cumplimiento de normas.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                                        <h4>Igualdad</h4>
+                                        <p>Promueve el sentido de pertenencia al grupo y elimina distinciones socioeconómicas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="page-content">
+                    <h2 class="mb-4">Reglamento General de Uniformes</h2>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-header">
+                                    <h3 class="card-title">Cadetes Masculinos</h3>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><strong>Cabello:</strong> Corte tipo militar, sin patillas, no debe tocar el cuello de la camisa.</li>
+                                        <li class="mb-2"><strong>Rostro:</strong> Afeitado diariamente, sin barba ni bigote.</li>
+                                        <li class="mb-2"><strong>Joyas:</strong> Solo se permite reloj de pulsera discreto y anillo de graduación.</li>
+                                        <li class="mb-2"><strong>Tatuajes:</strong> No visibles mientras se porta el uniforme.</li>
+                                        <li class="mb-2"><strong>Calzado:</strong> Siempre limpio y lustrado.</li>
+                                        <li class="mb-2"><strong>Postura:</strong> Erguida, con porte militar.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-header">
+                                    <h3 class="card-title">Cadetes Femeninos</h3>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><strong>Cabello:</strong> Recogido en moño tipo dona, no debe tocar el cuello. Si es corto, peinado discreto.</li>
+                                        <li class="mb-2"><strong>Maquillaje:</strong> Discreto y natural.</li>
+                                        <li class="mb-2"><strong>Joyas:</strong> Solo se permite reloj de pulsera discreto, aretes pequeños tipo botón y anillo de graduación.</li>
+                                        <li class="mb-2"><strong>Uñas:</strong> Cortas, limpias, sin esmalte o con esmalte transparente.</li>
+                                        <li class="mb-2"><strong>Calzado:</strong> Siempre limpio y lustrado.</li>
+                                        <li class="mb-2"><strong>Postura:</strong> Erguida, con porte militar.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h3 class="card-title">Condiciones Generales del Uniforme</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <li class="mb-2">El uniforme debe estar siempre limpio, planchado y en perfecto estado.</li>
+                                <li class="mb-2">Las prendas no deben presentar desgaste, manchas o roturas.</li>
+                                <li class="mb-2">No se permiten modificaciones al diseño oficial del uniforme.</li>
+                                <li class="mb-2">Los distintivos, insignias y botones deben estar correctamente colocados.</li>
+                                <li class="mb-2">El uniforme debe ajustarse adecuadamente al cuerpo, evitando tanto holguras excesivas como ajustes demasiado estrechos.</li>
+                                <li class="mb-2">Está prohibido mezclar prendas de diferentes tipos de uniformes.</li>
+                                <li class="mb-2">Al estar uniformado, el comportamiento debe ser ejemplar en todo momento, tanto dentro como fuera de la institución.</li>
+                            </ul>
+                            
+                            <div class="alert alert-info mt-4">
+                                <i class="fas fa-info-circle me-2"></i>
+                                <strong>Importante:</strong> El incumplimiento de las normas de uniformes puede resultar en sanciones disciplinarias según el reglamento estudiantil.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="page-content">
+                    <h2 class="mb-4">Tipos de Uniformes</h2>
+                    
+                    <div class="accordion" id="uniformsAccordion">
+                        <!-- Gala Uniform -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingGala">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGala" aria-expanded="true" aria-controls="collapseGala">
+                                    Uniforme de Gala
+                                </button>
+                            </h2>
+                            <div id="collapseGala" class="accordion-collapse collapse show" aria-labelledby="headingGala" data-bs-parent="#uniformsAccordion">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3 mb-md-0">
+                                            <div class="img-placeholder">
+                                                <i class="fas fa-user-tie fa-3x"></i>
+                                                <p>Uniforme de Gala</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h4>Descripción</h4>
+                                            <p>Uniforme formal utilizado en ceremonias oficiales, actos de graduación, representaciones institucionales y eventos especiales.</p>
+                                            
+                                            <h5>Composición:</h5>
+                                            <ul>
+                                                <li>Chaqueta azul marino con botones dorados</li>
+                                                <li>Pantalón/falda azul marino</li>
+                                                <li>Camisa blanca de manga larga</li>
+                                                <li>Corbata/pañuelo negro</li>
+                                                <li>Zapatos negros de charol</li>
+                                                <li>Distintivos de rango según nivel académico</li>
+                                                <li>Gorra de plato con escudo institucional</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Daily Uniform -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDaily">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDaily" aria-expanded="false" aria-controls="collapseDaily">
+                                    Uniforme Diario
+                                </button>
+                            </h2>
+                            <div id="collapseDaily" class="accordion-collapse collapse" aria-labelledby="headingDaily" data-bs-parent="#uniformsAccordion">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3 mb-md-0">
+                                            <div class="img-placeholder">
+                                                <i class="fas fa-user fa-3x"></i>
+                                                <p>Uniforme Diario</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h4>Descripción</h4>
+                                            <p>Utilizado para asistencia regular a clases, actividades académicas cotidianas y dentro de las instalaciones universitarias.</p>
+                                            
+                                            <h5>Composición:</h5>
+                                            <ul>
+                                                <li>Camisa celeste de manga corta con hombreras</li>
+                                                <li>Pantalón/falda azul marino</li>
+                                                <li>Cinturón negro con hebilla institucional</li>
+                                                <li>Zapatos negros</li>
+                                                <li>Calcetines/medias azul marino</li>
+                                                <li>Distintivos de rango según nivel académico</li>
+                                                <li>Gorra tipo baseball con escudo institucional (para exteriores)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Physical Education Uniform -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPhysical">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhysical" aria-expanded="false" aria-controls="collapsePhysical">
+                                    Uniforme de Educación Física
+                                </button>
+                            </h2>
+                            <div id="collapsePhysical" class="accordion-collapse collapse" aria-labelledby="headingPhysical" data-bs-parent="#uniformsAccordion">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3 mb-md-0">
+                                            <div class="img-placeholder">
+                                                <i class="fas fa-running fa-3x"></i>
+                                                <p>Uniforme Deportivo</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h4>Descripción</h4>
+                                            <p>Utilizado exclusivamente durante las clases de educación física, entrenamientos deportivos y competencias.</p>
+                                            
+                                            <h5>Composición:</h5>
+                                            <ul>
+                                                <li>Camiseta blanca con logo institucional</li>
+                                                <li>Pantalón corto (shorts) azul marino</li>
+                                                <li>Pantalón de chándal azul marino para clima frío</li>
+                                                <li>Calcetines blancos</li>
+                                                <li>Zapatillas deportivas blancas</li>
+                                                <li>Sudadera azul marino con logo institucional (opcional)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Practice Uniform -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPractice">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePractice" aria-expanded="false" aria-controls="collapsePractice">
+                                    Uniforme de Prácticas
+                                </button>
+                            </h2>
+                            <div id="collapsePractice" class="accordion-collapse collapse" aria-labelledby="headingPractice" data-bs-parent="#uniformsAccordion">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3 mb-md-0">
+                                            <div class="img-placeholder">
+                                                <i class="fas fa-hard-hat fa-3x"></i>
+                                                <p>Uniforme de Prácticas</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h4>Descripción</h4>
+                                            <p>Utilizado durante las prácticas en talleres, laboratorios, simuladores y durante pasantías a bordo de embarcaciones.</p>
+                                            
+                                            <h5>Composición:</h5>
+                                            <ul>
+                                                <li>Overol azul marino con logo institucional</li>
+                                                <li>Camiseta blanca debajo del overol</li>
+                                                <li>Botas de seguridad</li>
+                                                <li>Equipo de protección personal según la actividad</li>
+                                                <li>Gorra tipo baseball con escudo institucional</li>
+                                                <li>Credencial de identificación visible</li>
+                                            </ul>
+                                            
+                                            <div class="alert alert-warning mt-3">
+                                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                                El equipo de protección personal (EPP) es obligatorio y varía según el tipo de práctica o taller.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="page-content">
+                    <h3 class="mb-4">Visualizador de Uniformes</h3>
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <p class="mb-3">Utiliza nuestro visualizador interactivo para ver cómo son los diferentes uniformes de la carrera.</p>
+                            <div class="avatar-container"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="page-content">
+                    <h3 class="mb-4">Preguntas Frecuentes</h3>
+                    
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFaq1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq1" aria-expanded="false">
+                                    ¿Dónde puedo adquirir los uniformes?
+                                </button>
+                            </h2>
+                            <div id="collapseFaq1" class="accordion-collapse collapse" aria-labelledby="headingFaq1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Los uniformes pueden adquirirse en la tienda oficial de la universidad. Los estudiantes admitidos recibirán información detallada sobre el proceso de compra durante la semana de inducción.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFaq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq2" aria-expanded="false">
+                                    ¿Cuántos juegos de uniforme necesito?
+                                </button>
+                            </h2>
+                            <div id="collapseFaq2" class="accordion-collapse collapse" aria-labelledby="headingFaq2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Se recomienda tener al menos dos juegos del uniforme diario, un juego de gala, dos de educación física y uno de práctica. Esto permite mantener siempre un uniforme limpio mientras se lava el otro.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFaq3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq3" aria-expanded="false">
+                                    ¿Qué hago si mi uniforme se daña?
+                                </button>
+                            </h2>
+                            <div id="collapseFaq3" class="accordion-collapse collapse" aria-labelledby="headingFaq3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    En caso de daño, deberás adquirir una prenda de reemplazo lo antes posible. La universidad cuenta con un servicio de sastrería para reparaciones menores. No se permite asistir con uniformes dañados o incompletos.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFaq4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFaq4" aria-expanded="false">
+                                    ¿Puedo personalizar mi uniforme?
+                                </button>
+                            </h2>
+                            <div id="collapseFaq4" class="accordion-collapse collapse" aria-labelledby="headingFaq4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No. Cualquier modificación al diseño oficial del uniforme está prohibida y puede resultar en sanciones disciplinarias. Todos los cadetes deben lucir exactamente igual, siguiendo la tradición marítima.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="page-content">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Cuidado de tu Uniforme</h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i class="fas fa-tshirt text-primary me-2"></i> Lavar según las instrucciones de cada prenda
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-temperature-low text-primary me-2"></i> Lavar con agua fría para preservar los colores
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-iron text-primary me-2"></i> Planchar a temperatura media/baja
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-spray-can text-primary me-2"></i> No usar blanqueadores
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fas fa-wind text-primary me-2"></i> Secar a la sombra para evitar decoloración
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/avatar.js') }}"></script>
+{% endblock %}
+
+{% endblock %}
